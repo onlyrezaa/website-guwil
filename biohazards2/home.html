@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+    
+    <title>Biohazard</title>
+    
+    <link rel="website icon" type="png"
+    href="assets/logo.png">
+
+    <style>
+        /* Reset some default styles for better consistency */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(assets/homepage-bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Style the header */
+        header {
+            background-color: rgba(0, 0, 0, 0);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Style the main content */
+        .content {
+            padding: 20px;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            background-color: #ffffff00;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 15px;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .nav-link {
+            color: #fff; /* Change this to your preferred color */
+            text-decoration: none; /* Remove underline by default */
+            text-shadow: 2px 2px 2px #000;
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: 2px 2px 2px #000;
+        }
+
+        h2 {
+            text-align: center;
+            text-shadow: 2px 2px 2px #000;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        p {
+            text-align: center;
+            text-shadow: 2px 2px 2px #000;
+            color: rgb(255, 255, 255);
+            font-family: 'Gabarito', cursive;
+        }
+
+        .banner {
+        background-color: rgba(0, 0, 0, 0);
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+        }
+
+        .banner img {
+        max-width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        }
+
+        /* Basic card styles */
+        .card {
+            width: 250px;
+            padding: 20px;
+            margin: 20px auto;
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease; /* Add smooth transition on hover */
+        }
+
+        /* Additional content hidden by default */
+        .card .additional-content {
+            display: none;
+            margin-top: 15px;
+            color: #333;
+        }
+
+        /* Style the card heading */
+        .card h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        /* Hover effect */
+        .card:hover {
+            transform: scale(1.05); /* Scale up the card on hover */
+        }
+
+        /* Show additional content on hover */
+        .card:hover .additional-content {
+            display: block;
+        }
+
+        .card2 {
+            width: 250px;
+            padding: 20px;
+            margin: 20px auto;
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease; /* Add smooth transition on hover */
+        }
+
+        .card2 h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .card2 .additional-content {
+            display: none;
+            margin-top: 15px;
+            color: #333;
+        }
+
+        .card2:hover {
+            transform: scale(1.05); /* Scale up the card on hover */
+        }
+
+        .card2:hover .additional-content {
+            display: block;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: #B9D3E0; /* Background color of the button */
+            color: #000000; /* Text color */
+            border: 2px solid #9AB0BD;
+            border-radius: 5px; /* Rounded corners */
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            /* Move the element to the right by 50% of the container's width */
+            left: 50%; 
+            /* Calculates 50% of the element's width, and moves it by that */ 
+            /* amount across the X-axis to the left */
+            transform: translateX(-50%);
+        }
+
+        .button:hover {
+            background-color: #FFD018;
+            border: 2px solid #AF7B0B;
+        }
+
+        .button h2 {
+            text-align: center;
+            color: #000;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 17px;
+            text-shadow: none;
+        }
+
+        .text-link {
+            color: #000; /* Change this to your preferred color */
+            text-decoration: none; /* Remove underline by default */
+        }
+
+        .text1 {
+            text-align: center;
+        }
+
+        .text2 {
+            text-align: center;
+        }
+
+        /* Add responsive CSS for smaller screens */
+        @media (max-width: 768px) {
+            header {
+                font-size: 13px;
+            } 
+            
+            nav li {
+                font-size: 15px;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            .banner {
+                background-color: rgba(0, 0, 0, 0);
+            }
+
+            .banner img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            }
+
+            .text1 {
+                font-size: 11px;
+            }
+
+            .text2 {
+                font-size: 9px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="assets/banner.png" alt="Biohazard">
+            <h1>Welcome to Biohazard!</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="nav-link" href="#">Beranda</a></li>
+            <li><a class="nav-link" href="credit.html">Credit</a></li>
+            <li><a class="nav-link" href="leaderboard.html">Leaderboard</a></li>
+            <li><a class="nav-link" href="nothing.html">???</a></li>
+        </ul>
+    </nav>
+    <h2>Apa itu "Biohazard"?</h2>
+    <div class="content">
+        <p>Biohazard adalah salah satu guild di Guardian Tales yang ramah pemula dan friendly (:D). Kata "Biohazard" terinspirasi dari salah satu Game yaitu "Biohazard/Resident Evil".</p>
+    </div>
+    <div class="card">
+        <h2>Peraturan</h2>
+        <!-- Additional content -->
+        <div class="additional-content">
+            <p>Ngeraid minimal 1 boss atau seusahanya aja</p>
+            <p>Toxic sewajarnya</p>
+            <p>Off 14 hari kick (izin boleh tapi tidak untuk event eva)</p>
+        </div>
+    </div>
+    <div class="card2">
+        <h2>Benefit</h2>
+        <!-- Additional content -->
+        <div class="additional-content">
+            <p>Bebas chat di grup</p>
+            <p>Membernya ramah</p>
+            <p>Saling donate batu evo</p>
+            <p>Mabar ML :D (Opsional)</p>
+        </div>
+    </div>
+    <div class="text1">
+        <h2>Minat? Klik di bawah ini</h2>
+    </div>
+    <div class="button">
+        <h2><a class="text-link" href="https://wa.me/6288744728843?text=bang+pengen+join+guild+dong">Join Now!</a></h2>
+    </div>
+    <div class="text2">
+    <p>*disclaimer: guild ini mempunyai cabang asia 1, jadi buat asia 1 juga bisa join yaa</p>
+    </div>
+    <footer>
+        &copy; 2023 Biohazard
+    </footer>
+</body>
+</html>

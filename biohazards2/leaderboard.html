@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="website icon" type="png"
+    href="assets/logo.png">
+    
+    <title>Biohazard</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('assets/leaderboard-bg.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        h1 {
+            color: #fff;
+            text-shadow: 2px 2px 2px #000;
+        }
+
+        .leaderboard {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .leaderboard h1 {
+            text-align: center;
+        }
+
+        h2 {
+            color: #fff;
+            text-shadow: 2px 2px 2px #000;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .player {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #3C1F17;
+            border-radius: 3px;
+            background-color: #100C0B;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .guild {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #89354F;
+            border-radius: 3px;
+            background-color: #AF4164;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .guild .profile-pic {
+            width: 40px; /* Adjust the size as needed */
+            height: 40px; /* Adjust the size as needed */
+            border-radius: 15%; 
+            margin-right: 10px;
+        }
+
+        .guild .name {
+            font-weight: bold;
+            color: #FDF4EF;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .guild .score {
+            color: #CEEEFD;
+        }
+
+        .player .profile-pic {
+            width: 40px; /* Adjust the size as needed */
+            height: 40px; /* Adjust the size as needed */
+            border-radius: 15%; 
+            margin-right: 10px;
+            border: 2px solid #54401D;
+        }
+
+        .player .name {
+            font-weight: bold;
+            color: #CFC2B2;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .player .score {
+            color: #CEEEFD;
+        }
+
+        footer {
+            text-align: center;
+            color: #fff;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #ffffff00;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: underline;
+            border-radius: 5px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .back-button:hover {
+            background-color: #ffffff00;
+            color: deepskyblue;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-size: auto;
+            }
+            
+            h2 {
+                font-size: 9px;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">Kembali</a>
+    <div class="leaderboard">
+        <h1>Leaderboard</h1>
+        <h2>Leaderboard ini tidak real-time, hanya diperbarui pada saat raid telah berakhir.</h2>
+        <div class="guild">
+            <img class="profile-pic" src="assets/kanna-potrait.png" alt="Guild">
+            <span class="name">BiohazardS2</span>
+            <span class="score">1.745.672.398</span>
+        </div>
+        <div class="player">
+            <img class="profile-pic" src="assets/mayreel-potrait.png" alt="P1">
+            <span class="name">DemonDy</span>
+            <span class="score">386.057.211</span>
+        </div>
+        <div class="player">
+            <img class="profile-pic" src="assets/kamael-potrait.png" alt="P2">
+            <span class="name">XxHuntersX</span>
+            <span class="score">211.003.801</span>
+        </div>
+        <div class="player">
+            <img class="profile-pic" src="assets/mk99-potrait.png" alt="P3">
+            <span class="name">finryuu</span>
+            <span class="score">189.151.625</span>
+        </div>
+        <div class="player">
+            <img class="profile-pic" src="assets/gourry-potrait.png" alt="P4">
+            <span class="name">Dzaky</span>
+            <span class="score">132.150.945</span>
+        </div>
+        <div class="player">
+            <img class="profile-pic" src="assets/andras-potrait.png" alt="P5">
+            <span class="name">okta</span>
+            <span class="score">119.174.775</span>
+        </div>
+        <div class="player">
+            <img class="profile-pic" src="assets/eunha-potrait.png" alt="P6">
+            <span class="name">Rajul</span>
+            <span class="score">112.607.924</span>
+        </div>
+        <div class="player">
+            <img class="profile-pic" src="assets/idoleva-potrait.png" alt="P7">
+            <span class="name">KONTH-</span>
+            <span class="score">109.338.231</span>
+        </div>
+        <div class="player">
+            <img class="profile-pic" src="assets/eunha-potrait.png" alt="P8">
+            <span class="name">Zeisha_Zou</span>
+            <span class="score">86.467.466</span>
+        </div>
+        <div class="player">
+            <img class="profile-pic" src="assets/lynn-potrait.png" alt="P9">
+            <span class="name">Kiiroigami</span>
+            <span class="score">73.281.155</span>
+        </div>
+        <div class="player">
+            <img class="profile-pic" src="assets/eunha-potrait.png" alt="P10">
+            <span class="name">Edyn</span>
+            <span class="score">56.586.671</span>
+        </div>
+        <div class="player">
+            <img class="profile-pic" src="assets/carol-potrait.png" alt="P11">
+            <span class="name">レザー</span>
+            <span class="score">54.542.146</span>
+        </div>
+        <div class="player">
+            <img class="profile-pic" src="assets/kai-potrait.png" alt="P12">
+            <span class="name">Kenz</span>
+            <span class="score">47.363.004</span>
+        </div>
+        <div class="player">
+            <img class="profile-pic" src="assets/kamael-potrait.png" alt="P13">
+            <span class="name">CHRONOSSS</span>
+            <span class="score">40.966.113</span>
+        </div>
+        <div class="player">
+            <img class="profile-pic" src="assets/karina-potrait.png" alt="P14">
+            <span class="name">Rifzzy</span>
+            <span class="score">23.070.427</span>
+        </div>
+        <div class="player">
+            <img class="profile-pic" src="assets/andras-potrait.png" alt="P15">
+            <span class="name">Zhiend</span>
+            <span class="score">17.526.868</span>
+        </div>
+        <!-- Add more player entries as needed -->
+    </div>
+    <footer>
+        &copy; 2023 Biohazard
+    </footer>
+</body>
+</html>
